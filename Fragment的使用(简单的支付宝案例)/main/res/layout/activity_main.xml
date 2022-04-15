@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:id="@+id/List_first"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/bg_white"
+      android:layout_alignParentBottom="true">
+      <TextView
+          android:id="@+id/tv_index"
+          android:drawableTop="@drawable/tab_index"
+          android:text="首页"
+          style="@style/button" />
+      <TextView
+          android:id="@+id/tv_licai"
+          android:drawableTop="@drawable/tab_licat"
+          android:text="理财"
+          style="@style/button"  />
+      <TextView
+          android:id="@+id/tv_live"
+          android:drawableTop="@drawable/tab_live"
+          android:text="生活"
+          style="@style/button"  />
+      <TextView
+          android:id="@+id/tv_message"
+          android:drawableTop="@drawable/tab_message"
+          android:text="消息"
+          style="@style/button"  />
+      <TextView
+          android:id="@+id/tv_my"
+          android:drawableTop="@drawable/tab_my"
+          android:text="我的"
+          style="@style/button"  />
+  </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragment_first"
+        android:layout_above="@+id/List_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</RelativeLayout>
