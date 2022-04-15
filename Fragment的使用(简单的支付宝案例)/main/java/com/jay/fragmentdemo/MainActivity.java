@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         fragmentManager=getSupportFragmentManager();
         init();
-        tv_index.performClick();
+        tv_index.performClick();//模拟一次点击，既进去后选择第一项
     }
 
     private void init() {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_licai.setOnClickListener(this);
         tv_index.setOnClickListener(this);
     }
-
+	//重置所有文本的选中状态
     private void setSelected(){
         tv_index.setSelected(false);
         tv_licai.setSelected(false);
@@ -53,6 +53,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_my.setSelected(false);
     }
 
+
+
+	//隐藏所有Fragment
     private void hideAllFragmentdemo(FragmentTransaction fragmentTransaction){
         if (fg1!=null)fragmentTransaction.hide(fg1);
         if (fg2!=null)fragmentTransaction.hide(fg2);

@@ -1,0 +1,41 @@
+# $\color{#0000FF}{Fragment 使用}$
+
+***
+
+## $\color{#00FFFF}{新建一个xxx.xml文件}$
+
+***
+
+### 这里写的是FrameLayout里的布局
+
+## $\color{#00FFFF}{新建extends Fragment的类(Fragment管理器)}$
+
+***
+
+### 有两种包(建议选择android.support.v4.app.Fragment这个包,因为这个包可以兼容1.6版本的Android,而android.app.Fragment只能兼容3.0以上的Android)
+
+### 重写onCreateView方法(获取对应的标签,并设置相应的值来设置碎片里的布局)
+
+![44](1.png)
+
+## $\color{#00FFFF}{编辑主文件布局}$
+
+***
+
+### 建议使用相对布局,用android:layout_alignParentBottom="true"可以将底部控制碎片切换的按钮或TextView固定在底部,添加FrameLayout标签
+
+## $\color{#00FFFF}{编辑主活动}$
+
+***
+
+### (1)创建Fragment的对象(就是之前继承Fragment的类)
+
+### (2)获取FragmentManager(Fragment管理器)的实例
+`FragmentManager fragmentManager=getSupportFragmentManager() `
+
+### (3)开启FragmentTransaction事务
+`FragmentTransaction fTransaction=fragmentManager.beginTransaction()`
+### (4)提交事务
+`fTransaction.commit();`
+
+
