@@ -16,7 +16,7 @@
 
 ### 重写onCreateView方法(获取对应的标签,并设置相应的值来设置碎片里的布局)
 
-![44](1.png)
+![44](https://github.com/122kk/AndroidUp/blob/master/Fragment%E7%9A%84%E4%BD%BF%E7%94%A8(%E7%AE%80%E5%8D%95%E7%9A%84%E6%94%AF%E4%BB%98%E5%AE%9D%E6%A1%88%E4%BE%8B)/main/1.png)
 
 ## $\color{#00FFFF}{编辑主文件布局}$
 
